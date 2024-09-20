@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home/Twitter</title>
+    <link rel="stylesheet" href="demo.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+  </head>
+  <body>
+   
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <i class="fab fa-twitter"></i>
+      <div class="sidebarOption active">
+        <span class="material-icons" style="color:black ;"> home </span>
+        <h2 style="color: black;">Home</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> search </span>
+        <h2><a href="https://twitter.com/explore" style="text-decoration: none; color: black;" >Explore</a></h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> notifications_none </span>
+        <h2><a href="https://twitter.com/notifications" style="text-decoration: none; color: black;" >Notifications</a></h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> mail_outline </span>
+        <h2>Messages</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> bookmark_border </span>
+        <h2>Bookmarks</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> list_alt </span>
+        <h2>Lists</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> perm_identity </span>
+        <h2><a href="pp.html" style="text-decoration: none; color: black;" >Profile</a></h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> more_horiz </span>
+        <h2>More</h2>
+      </div>
+      <a href="tweetbox.html">
+      <button class="sidebar__tweet">Tweet</button>
+      </a>
+      
+
+    </div>
+    <!-- sidebar ends -->
+
+    <!-- feed starts -->
+    <div class="feed">
+      <div class="feed__header">
+        <h2>Home</h2>
+      </div>
+
+      <!-- tweetbox starts -->
+      <div class="tweetBox">
+        <form>
+          <div class="tweetbox__input">
+              <a href="pp.html">
+                <button="next-btn">
+            <img
+              src="https://static.wixstatic.com/media/4526cf_695fcce7fa68430f875150ef0060ff7b~mv2.png/v1/fit/w_2500,h_1330,al_c/4526cf_695fcce7fa68430f875150ef0060ff7b~mv2.png"
+              alt=""
+            />
+                </button>
+              </a>
+            <input type="text" placeholder="What's happening?" />
+          </div>
+          <div class="tweetbox__footer">
+            <span class="material-icons">gif_box</span>
+            <span class="material-icons">image</span>
+            <span class="material-icons">poll</span>
+            <span class="material-icons">emoji_emotions</span>
+            <button class="tweetBox__tweetButton" onclick="myFunction()"><a href="demo.html" style="text-decoration: none; color: white;">Tweet</a></button>
+            <script src="tweet.js"></script>
+          </div>
+        </form>
+      </div>
+      <!-- tweetbox ends -->
+
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img src="https://pbs.twimg.com/profile_images/1427292844612595720/RC1YSvuT_400x400.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                YouTube
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@YouTube</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>the Shorts that **defined** your 2022 were...<br/> #2022inShort
+                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">After yesterday&#39;s Fun Fact it&#39;s poll time! Which name do you prefer? Don&#39;t worry, we&#39;ll stay with Life Is Strange.</p>&mdash; Life Is Strange (@LifeIsStrange) <a href="https://twitter.com/LifeIsStrange/status/715466160284807168">March 31, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </p>
+             </div>
+          </div>
+          <img
+          src=""
+          alt=""
+        />
+            <div class="post__footer">
+              <span class="material-icons">chat_bubble_outline</span>
+              <span class="material-icons"> repeat </span>
+              <span class="material-icons"> favorite_border </span>
+              <span class="material-icons"> publish </span>
+            </div>
+          </div>
+        </div>
+      <!-- post ends -->
+
+    
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img src="https://pbs.twimg.com/profile_images/1488548719062654976/u6qfBBkF_400x400.jpg"
+            alt=""
+          />
+        </div>
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Twitter
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@Twitter</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>now you can search for really important things in your DMs</p>
+              <img src="https://pbs.twimg.com/media/FOj0lgmX0A0Wnev?format=jpg&name=900x900"
+              alt=""
+            /> 
+             </div>
+          </div>
+            <div class="post__footer">
+              <span class="material-icons">chat_bubble_outline</span>
+              <span class="material-icons"> repeat </span>
+              <span class="material-icons"> favorite_border </span>
+              <span class="material-icons"> publish </span>
+            </div>
+          </div>
+        </div>
+      <!-- post ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://pbs.twimg.com/profile_images/1508518003184349187/1KQYoqPY_400x400.png"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                LinkedIn
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@LinkedIn</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>📡 Turn on creator mode to help grow your reach and influence on LinkedIn<br/> → <a class="link" href="https://www.linkedin.com/pulse/introducing-creator-mode-your-linkedin-profile-margaret-rose-taormina/"> http://lnkd.in/CreatorMode </a>
+                </p>
+            </div>
+          </div>
+          <img
+            src="https://pbs.twimg.com/media/FhAAk3zWIAA8Cnx?format=jpg&name=900x900"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons">chat_bubble_outline</span>
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+
+      <!-- post starts -->
+      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">How does NASA celebrate the holidays?<a href="https://twitter.com/NASA_Astronauts?ref_src=twsrc%5Etfw">@NASA_Astronauts</a> and our space storytellers share the details in a special episode of our Curious Universe podcast: <a href="https://t.co/l6n9pIU62A">https://t.co/l6n9pIU62A</a> <a href="https://t.co/h0bFXIeZrQ">pic.twitter.com/h0bFXIeZrQ</a></p>&mdash; NASA (@NASA) <a href="https://twitter.com/NASA/status/1604187839733833730?ref_src=twsrc%5Etfw">December 17, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <!-- post ends -->
+
+    </div>
+    <!-- feed ends -->
+
+    <!-- widgets starts -->
+    <div class="widgets">
+      <div class="widgets__input">
+        <span class="material-icons widgets__searchIcon"> search </span>
+        <input type="text" placeholder="Search Twitter" />
+      </div>
+
+      <div class="widgets__widgetContainer">
+        <h2>What's happening?</h2>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">MARTIN SAMUEL: The beautiful game gives Lionel Messi the ending he richly deserves as Argentina win the World Cup <a href="https://t.co/ZEUZTb9lBH">https://t.co/ZEUZTb9lBH</a></p>&mdash; MailOnline Sport (@MailSport) <a href="https://twitter.com/MailSport/status/1604721970137948160?ref_src=twsrc%5Etfw">December 19, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </blockquote>
+      </div>
+    </div>
+    <!-- widgets ends -->
+
+  </body>
+</html>

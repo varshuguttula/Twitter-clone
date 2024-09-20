@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home/Twitter</title>
+    <link rel="stylesheet" href="demo.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+  </head>
+  <body>
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <i class="fab fa-twitter"></i>
+      <div class="sidebarOption active">
+        <span class="material-icons" style="color:black ;"> home </span>
+        <h2 style="color: black;">Home</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> search </span>
+        <h2><a href="https://twitter.com/explore" style="text-decoration: none; color: black;" >Explore</a></h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> notifications_none </span>
+        <h2><a href="https://twitter.com/notifications" style="text-decoration: none; color: black;" >Notifications</a></h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> mail_outline </span>
+        <h2>Messages</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> bookmark_border </span>
+        <h2>Bookmarks</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> list_alt </span>
+        <h2>Lists</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> perm_identity </span>
+        <h2><a href="pp.html" style="text-decoration: none; color: black;" >Profile</a></h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> more_horiz </span>
+        <button class="button-solid" onclick="openForm()"><h2>More</h2></button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <span class="material-icons" style="color: black;">
+      settings
+      </span>
+    <h2><a href="pp.html" style="text-decoration: none; color: black;" >Settings</a></h2>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script src="openfunction.js"></script>
+
+
+      </div>
+      <a href="tweetbox.html">
+      <button class="sidebar__tweet">Tweet</button>
+      </a>
+      
+
+    </div>
+    <!-- sidebar ends -->
+
+    <!-- feed starts -->
+    <div class="feed">
+      <div class="feed__header">
+        <h2 style="font-weight: normal; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Home</h2>
+      </div>
+
+      <!-- tweetbox starts -->
+      <div class="tweetBox">
+        <form>
+          <div class="tweetbox__input">
+            <a href="pp.html">
+              <button="next-btn">
+           <img
+              src="https://static.wixstatic.com/media/4526cf_695fcce7fa68430f875150ef0060ff7b~mv2.png/v1/fit/w_2500,h_1330,al_c/4526cf_695fcce7fa68430f875150ef0060ff7b~mv2.png"
+              alt=""
+            />
+              </button>
+            </a>
+            <input type="text" placeholder="What's happening?" maxlength="10"/>
+          </div>
+          <div class="tweetbox__footer">
+            <span class="material-icons">gif_box</span>
+            <span class="material-icons">image</span>
+            <span class="material-icons">poll</span>
+            <span class="material-icons">emoji_emotions</span>
+            <button class="tweetBox__tweetButton" onclick="myFunction()"><a href="refresh.html" style="text-decoration: none; color: white;">Tweet</a></button>
+            <script src="tweet.js"></script>
+          </div>
+        </form>
+      </div>
+      <!-- tweetbox ends -->
+
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img src="https://pbs.twimg.com/profile_images/1585617858184323072/Vy138ToA_400x400.png"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Microsoft365
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@Microsoft365</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>What makes a meeting successful in the world <br/>of hybrid work? One where all participants can contribute<br/> inclusively.💡
+
+          <br/>See how the tools in Microsoft Whiteboard make <br/>that possible:<a class="link" href="https://techcommunity.microsoft.com/t5/microsoft-365-blog/what-s-new-for-microsoft-whiteboard-november-2022/ba-p/3669360?ocid=usoc_TWITTER_M365_spl100003583347449"> https://msft.it/6010ezW8k</a>
+                 #MicrosoftTeams
+                </p>
+             </div>
+          </div>
+          <img
+          src="https://pbs.twimg.com/media/Fjd6hHUX0AAUBI1?format=jpg&name=900x900"
+          alt=""
+        />
+            <div class="post__footer">
+              <span class="material-icons">chat_bubble_outline</span>
+              <span class="material-icons"> repeat </span>
+              <span class="material-icons"> favorite_border </span>
+              <span class="material-icons"> publish </span>
+            </div>
+          </div>
+        </div>
+      <!-- post ends -->
+
+    
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                NASA
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@NASA</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Splashdown. 
+
+After traveling 1.4 million miles through space,<br/>orbiting the Moon, and collecting data that will prepare us to send astronauts <br/>on future #Artemis missions, the 
+@NASA_Orion
+ spacecraft is home.</p>
+             </div>
+          </div>
+          <video width="400" controls>
+            <source src="moon.mp4" type="video/mp4">
+            <div class="post__footer">
+              <span class="material-icons">chat_bubble_outline</span>
+              <span class="material-icons"> repeat </span>
+              <span class="material-icons"> favorite_border </span>
+              <span class="material-icons"> publish </span>
+            </div>
+          </div>
+        </div>
+      <!-- post ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://pbs.twimg.com/profile_images/1549074154548334593/WlX5YcL5_400x400.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Google
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@Google</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Get smarter about your sleep with Sleep Profile for #GooglePixelWatch.¹ #FeatureDrop
+
+                <br/>🛌Get helpful insights about your sleep quality from 
+                @Fitbit
+                
+                <br/>📊See a breakdown of 10 key sleep metrics
+                <br/>😴Learn how to get a better night's rest
+                
+                Plus meet your designated sleep animal👀⬇️
+                </p>
+            </div>
+          </div>
+          <img
+            src="https://pbs.twimg.com/media/FjjQPKgXwAAUUYN?format=jpg&name=large"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons">chat_bubble_outline</span>
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+
+
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://pbs.twimg.com/profile_images/1549074154548334593/WlX5YcL5_400x400.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Google
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@Google</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>
+                This year, Google Duplex called over 100,000 local businesses in 7 <br/>countries to help fans around the world easily find bars, restaurants and cafes <br/>showing the ⚽ games. Search for "where to watch the World Cup near me" and enjoy <br/>watching the final! 🏆 Gooaalll!
+                </p>
+            </div>
+          </div>
+          <img
+            src="https://pbs.twimg.com/media/FkIjbwsXEAIXkHZ?format=jpg&name=4096x4096"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons">chat_bubble_outline</span>
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+
+
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://pbs.twimg.com/profile_images/1529107170448523264/q3VwEx38_400x400.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                BBC World
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@BBCWorld</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Five killed by gunman in Canada apartment block <a href="https://t.co/Wt1RZcQlRF">https://t.co/Wt1RZcQlRF</a></p>&mdash; BBC News (World) (@BBCWorld) <a href="https://twitter.com/BBCWorld/status/1604771180937871360?ref_src=twsrc%5Etfw">December 19, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </p>
+            </div>
+          </div>
+          <div class="post__footer">
+            <span class="material-icons">chat_bubble_outline</span>
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+
+
+    </div>
+    <!-- feed ends -->
+
+
+
+    <!-- widgets starts -->
+    <div class="widgets">
+      <div class="widgets__input">
+        <span class="material-icons widgets__searchIcon"> search </span>
+        <input type="text" placeholder="Search Twitter" />
+      </div>
+
+      <div class="widgets__widgetContainer">
+        <h2>What's happening?</h2>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            Sunsets don&#39;t get much better than this one over
+            <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>.
+            <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#nature</a
+            >
+            <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#sunset</a
+            >
+            <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a>
+          </p>
+          &mdash; US Department of the Interior (@Interior)
+          <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw"
+            >May 5, 2014</a
+          >
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+    <!-- widgets ends -->
+  </body>
+</html>
